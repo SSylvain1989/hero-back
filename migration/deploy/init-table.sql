@@ -2,8 +2,8 @@
 
 BEGIN;
 
-CREATE SCHEMA nav AUTHORIZATION heros;
-CREATE SCHEMA game AUTHORIZATION heros;
+CREATE SCHEMA nav AUTHORIZATION niegrpnjxstges;
+CREATE SCHEMA game AUTHORIZATION niegrpnjxstges;
 
 CREATE TABLE nav.game_details (
   "id" int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -129,7 +129,7 @@ CREATE TABLE game.character_has_item ( -- table de liaison, character(id), item(
   "item_id" int REFERENCES game.item(id)
 );
 
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA nav TO heros;
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA game TO heros;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA nav TO niegrpnjxstges;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA game TO niegrpnjxstges;
 
 COMMIT;

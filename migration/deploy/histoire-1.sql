@@ -193,6 +193,6 @@ SELECT  scene.id AS scene_id,
 FROM game.scene
 JOIN game.type ON "type"."id" = scene.type_id;
 
-GRANT ALL PRIVILEGES ON scene_text, scene_opponent, scene_clickable_element, scene_finish TO heros;
+GRANT ALL PRIVILEGES ON scene_text, scene_opponent, scene_clickable_element, scene_finish TO niegrpnjxstges;
 
 COMMIT;
